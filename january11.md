@@ -14,6 +14,6 @@
 > 2. CSE 15L
 > 3. MATH 20C
 > 4. ETHN 2R
-'''
+```
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus integer feugiat scelerisque varius morbi enim. Pharetra convallis posuere morbi leo urna molestie at. Feugiat nibh sed pulvinar proin gravida hendrerit lectus a. Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Mi proin sed libero enim sed faucibus turpis. Gravida dictum fusce ut placerat orci nulla pellentesque. Odio ut enim blandit volutpat. Quis imperdiet massa tincidunt nunc pulvinar sapien et.
-'''
+```
