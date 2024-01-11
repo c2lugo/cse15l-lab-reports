@@ -1,2 +1,2 @@
-## Lab Report 1
+## __Lab Report__ 1
 ---
