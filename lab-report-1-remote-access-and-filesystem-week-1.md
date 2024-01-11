@@ -1,6 +1,6 @@
 # Lab Report 1 - Remote Access and FileSystem 
 
-`cd
+`#cd`
 1. cd used with no arguments
 ```
 [user@sahara ~]$ cd
