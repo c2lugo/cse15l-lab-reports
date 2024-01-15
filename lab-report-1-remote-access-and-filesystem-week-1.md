@@ -36,23 +36,33 @@ In the `/home/lecture1` directory, if we use the `cd` command with a path to the
 # `ls`
 1. `ls` used with no arguments
 ```
+[user@sahara ~]$ pwd
+/home
 [user@sahara ~]$ ls
 lecture1
 ```
-The `ls` command lists the available files and folders in the current working path. `ls` listed the folder `lecture1` as it is the only file/folder accessable for the `HOME` directory. 
+The `ls` command prints the files and folders in the given path. In the `/home` directory, if we use the `ls` command with no arguments it will list the files and folders in the current directory. Since we are currently in the `/home` directory it lists the files and folders in `/home` directory and in this case the only thing listed was the folder `lecture1`. This did not result in an error.
 
 2. `ls` used with path to a directory as an argument
 ```
-[user@sahara ~]$ ls lecture1
+[user@sahara ~]$ pwd
+/home
+[user@sahara ~]$ ls lecture1/
 Hello.class  Hello.java  messages  README
+[user@sahara ~]$ pwd
+/home
 ```
-The current directory was `/home` but using a directory as an argument we are able to see the files accessible in the `/lecture1` path. 
-3. `ls` used with path to a file as argument
+In this case, we are still in the `/home` directory. But, if we use the directory `lecture1/` as an argument, we can view the the files and folders within that directory without changing directorys. We can see this by using the command `pwd` which shows that we did not change directorys. This did not result in an error. 
+
+3. `ls` used with a path to a file as an argument
 ```
-[user@sahara ~/lecture1]$ ls Hello.java
+[user@sahara ~/lecture1]$ pwd
+/home/lecture1
+[user@sahara ~/lecture1]$ ls Hello.java 
 Hello.java
 ```
-While in the `/lecture1` directory, if we use a file as an argument, the `ls` command just returns the file since it is the only thing accesible unlike if it was a folder with other accesible files.
+While in the `/lecture1` directory, we can try using the `ls` command with a path to the file `Hello.java`. This does not result in an error but instead just lists the file since there are no files or folders within the `Hello.java` file.
+
 
 # `cat`
 1. `cat` used with no arguments
