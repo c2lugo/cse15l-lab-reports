@@ -71,21 +71,23 @@ While in the `/lecture1` directory, we can try using the `ls` command with a pat
 Concatenate this text 
 Concatenate this text
 ```
-`cat` used with no argument will take the user input and duplicate it. For instance, I had input "Concatenate this text" and it printed our that input. `cat` usually takes one or more agrs and concatenates the files.
+In this we are trying to use the command `cat` in the `/home` directory with no arguments. The `cat` command usually displays the contents of one or more files. Since we did not include any path, it reads the user's input and reprints the input. This is not an error but shows the behavior of the `cat` command which reprints whatever you input whether that is a file or user input.
 
-2. `cat` used with path to a directory as an argrument
+2. `cat` used with a path to a directory as an argrument
 ```
-[user@sahara ~]$ cat lecture1
+[user@sahara ~]$ cat lecture1/
 cat: lecture1: Is a directory
 ```
-In the current path `/home`, if we input a directory as a argument, it will result in an error and with be unable to concatenate as the `cat` prints the contents of files and is unable to with a directory. 
+In the current path `/home`, if we input the path `lecture1` as a argument, it will result in an error. It displays that the path we input `Is a directory`. The `cat` command can only print the contents of files and not folders/directorys. 
 
 3. `cat used with path to a file as an argument
 ```
+[user@sahara ~/lecture1/messages]$ pwd
+/home/lecture1/messages
 [user@sahara ~/lecture1/messages]$ cat en-us.txt 
 Hello World!
 ```
-In the `/lecture1/messages` directory, using the file, `en-us.txt`, as an argument will print the contents of the file.
+In the `/home/lecture1/messages` directory, if we use the `cat` command with the path to the file `en-us.txt` as an argument, it will print the contents of the file which was `Hello World!`. This is not an error. 
 
 
 
