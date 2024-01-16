@@ -9,7 +9,7 @@
 [user@sahara ~]$ pwd
 /home
 ```
-The current directory before using the `cd` command was `/home/lecture1`, this is shown by the using `pwd` command which prints the current working directory. If we use the `cd` command with no arguments, it will take you to the `HOME` directory. The `cd` command changes the current working directory to the given argument or path. Since no arugment was given, it takes us back the start or the `/home` directory. This is not an error.
+The current directory before using the `cd` command was `/home/lecture1`, this is shown by the using `pwd` command which prints the current working directory. If we use the `cd` command with no arguments, it will take you to the `HOME` directory. The `cd` command changes the current working directory to the given argument or path. Since no argument was given, it takes us back to the start or the `/home` directory. This is not an error.
 
 
 2. `cd` used with a path to a directory as an argument
@@ -20,7 +20,7 @@ The current directory before using the `cd` command was `/home/lecture1`, this i
 [user@sahara ~/lecture1]$ pwd
 /home/lecture1
 ```
-If we use the `cd` command with the argument, `lecture1/`, it will take us to that path or directory. Previously, we were in the `/home` directory but using the `cd` we are able to switch into the directory given. This did not result in an error and if we use the `pwd` command we can see that we were taken to `/home/lecture1` which shows `cd` ran successfully.
+If we use the `cd` command with the argument, `lecture1/`, it will take us to that path or directory. Previously, we were in the `/home` directory but using the `cd` command we were able to switch into the directory given. This did not result in an error and if we use the `pwd` command we can see that we were taken to `/home/lecture1` which shows `cd` ran successfully.
 
 3. `cd` used with a path to a file as an argument
 ```
@@ -31,7 +31,7 @@ bash: cd: Hello.java: Not a directory
 [user@sahara ~/lecture1]$ pwd
 /home/lecture1
 ```
-In the `/home/lecture1` directory, if we use the `cd` command with a path to the file, `Hello.java`, it prints `Not a directory`. This is because we cannot change the directory to a file. This results in an error since the `cd` command was not able to change directorys and stayed in `/home/lecture1` seen through the `pwd` command.
+In the `/home/lecture1` directory, if we use the `cd` command with a path to the file, `Hello.java`, it prints `Not a directory`. This is because we cannot change the directory to a file. This results in an error since the `cd` command was not able to change directories and stayed in `/home/lecture1` seen through the `pwd` command.
 
 # `ls`
 1. `ls` used with no arguments
@@ -52,7 +52,7 @@ Hello.class  Hello.java  messages  README
 [user@sahara ~]$ pwd
 /home
 ```
-In this case, we are still in the `/home` directory. But, if we use `lecture1/` as an argument, we can view the the files and folders within that directory without changing directorys. We can see this by using the command `pwd` which shows that we did not change directorys. This did not result in an error. 
+In this case, we are still in the `/home` directory. But, if we use `lecture1/` as an argument, we can view the files and folders within that directory without changing directories. We can see this by using the command `pwd` which shows that we did not change directories. This did not result in an error. 
 
 3. `ls` used with a path to a file as an argument
 ```
@@ -73,12 +73,12 @@ Concatenate this text
 ```
 In this we are trying to use the command `cat` while in the `/home` directory with no arguments. The `cat` command usually displays the contents of one or more files. Since we did not include any path to a file, it reads the user's input and reprints the input. This is not an error but shows the behavior of the `cat` command which reprints whatever you input whether that is a file or user input.
 
-2. `cat` used with a path to a directory as an argrument
+2. `cat` used with a path to a directory as an argument
 ```
 [user@sahara ~]$ cat lecture1/
 cat: lecture1: Is a directory
 ```
-In the current path `/home`, if we input the path `lecture1` as a argument, it will result in an error. It displays that the path we input `Is a directory`. The `cat` command can only print the contents of files and not folders/directorys. 
+In the current path `/home`, if we input the path `lecture1` as an argument, it will result in an error. It displays that the path we input `Is a directory`. The `cat` command can only print the contents of files and not folders/directories. 
 
 3. `cat used with path to a file as an argument
 ```
