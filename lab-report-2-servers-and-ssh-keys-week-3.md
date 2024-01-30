@@ -59,6 +59,9 @@ class ChatServer {
 ```add-message?s=Hi&user=carloslugo```
 
 <img width="1709" alt="Screenshot 2024-01-29 at 4 21 01 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/74c9c23e-2bac-4b6d-91dc-c066150fd56d">
+
+The handleRequest() method is called
+    
 ```add-message?s=Bye&user=carloslugo```
 
 <img width="1702" alt="Screenshot 2024-01-29 at 4 21 11 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/e838dd32-4661-4921-a058-9fbb83a80d97">
