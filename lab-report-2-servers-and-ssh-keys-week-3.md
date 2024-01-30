@@ -1,7 +1,7 @@
 # Lab Report 2 Servers and SSH keys
 
-# Part 1
-```ChatServer.java```
+## Part 1
+**```ChatServer.java```**
 ```
 import java.io.IOException;
 import java.net.URI;
@@ -56,15 +56,21 @@ class ChatServer {
     }
 }
 ```
-```add-message?s=Hi&user=carloslugo```
 
-<img width="1709" alt="Screenshot 2024-01-29 at 4 21 01 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/74c9c23e-2bac-4b6d-91dc-c066150fd56d">
+http://localhost:4004/add-message?s=Hi&user=carloslugo
 
-The handleRequest() method is called
+<img width="600" alt="cse-15L-lab-report-2-screenshot1-" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/89d5acc3-de03-4dbd-8589-dbd8d49e5bef">
+
+**Methods called** 
+
+The ```handleRequest()``` method is called
     
-```add-message?s=Bye&user=carloslugo```
+http://localhost:4004/add-message?s=Bye&user=carloslugo
 
-<img width="1702" alt="Screenshot 2024-01-29 at 4 21 11 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/e838dd32-4661-4921-a058-9fbb83a80d97">
+<img width="598" alt="cse-15L-lab-report-2-screenshot-2" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/580cf6b1-d7c3-4eb9-81d3-31fef9007e5e">
+
+
+
 
 
 
