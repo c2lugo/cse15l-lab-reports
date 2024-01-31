@@ -59,7 +59,6 @@ class ChatServer {
 
 ## Screenshot 1 (First message)
 http://localhost:4004/add-message?s=Hi&user=carloslugo
-
 <img width="600" alt="cse-15L-lab-report-2-screenshot1-" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/89d5acc3-de03-4dbd-8589-dbd8d49e5bef">
 
 1. The ```handleRequest()``` method is called. The relevant argument in this screenshot is ```/add-message?s=Hi&user=carloslugo```.
@@ -67,7 +66,6 @@ The relevant fields are in the method, user and message. These fields are empty 
 
 ## Screenshot 2 (Second message)
 http://localhost:4004/add-message?s=Bye&user=carloslugo
-
 <img width="598" alt="cse-15L-lab-report-2-screenshot-2" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/580cf6b1-d7c3-4eb9-81d3-31fef9007e5e">
 
 2. The ```handleRequest()``` method is called. The relevant argument in this screenshot is ```/add-message?s=Hi&user=carloslugo```.
