@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
 
-
 class Handler implements URLHandler {
     private ArrayList<String> messages = new ArrayList<>();
     private ArrayList<String> users = new ArrayList<>();
@@ -32,8 +31,9 @@ class Handler implements URLHandler {
             if (!user.isEmpty() && !message.isEmpty()) {
                 String chatMessage = user + ": " + message;
                 users.add(user);
-                messages.add(message);
-                return String.join("\n", chatMessage);
+                messages.add(chatMessage);
+                // Using String.join to concatenate all messages with newline separator
+                return String.join("\n", messages);
             }
         }
 
@@ -41,9 +41,7 @@ class Handler implements URLHandler {
     }
 }
 
-
 class ChatServer {
-    
     public static void main(String[] args) throws IOException {
         if (args.length == 0) {
             System.out.println("Missing port number! Try any number between 1024 to 49151");
@@ -55,34 +53,38 @@ class ChatServer {
         Server.start(port, new Handler());
     }
 }
+
 ```
 
 ## Screenshot 1 (First message)
-http://localhost:4004/add-message?s=Hi&user=carloslugo
-<img width="600" alt="cse-15L-lab-report-2-screenshot1-" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/89d5acc3-de03-4dbd-8589-dbd8d49e5bef">
+http://localhost:40066/add-message?s=Hi&user=carloslugo
+<img width="1710" alt="Screenshot 2024-02-12 at 1 45 18 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/7c303061-ae4b-4c48-9e48-86e2f2fc5f5b">
 
-1. The ```handleRequest()``` method is called. The relevant argument in this screenshot is ```/add-message?s=Hi&user=carloslugo```.
-The relevant fields are in the method, user and message. These fields are empty before the method is ran, but when ran with said argurment. When the method is the the user field value becomes ```"carloslugo"``` and the message value becomes ```"Hi"```. These values are changed due to the argument. These values are then stored in two lists that are changed each time an argument is input. 
+
+1. The ```handleRequest()``` method is called. The relevant argument in this screenshot is ```http://localhost:40066/add-message?s=Hi&user=carloslugo```. The relevant fields in the ```Handler``` class are ```messages``` and ```users``` which are both array lists that store the previous users and previous messages sent. When the method is called with the argument, ```http://localhost:4004/add-message?s=Hi&user=carloslugo```, the values of these fields change and "carloslugo" is added to the ```users``` list and "Hi" is added to the ```messages``` list. The array lists are updated accordingly based on the query parameters.
+
 
 ## Screenshot 2 (Second message)
-http://localhost:4004/add-message?s=Bye&user=carloslugo
-<img width="598" alt="cse-15L-lab-report-2-screenshot-2" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/580cf6b1-d7c3-4eb9-81d3-31fef9007e5e">
+http://localhost:40066/add-message?s=Bye&user=carloslugo
+<img width="1710" alt="Screenshot 2024-02-12 at 1 46 35 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/ac1540aa-1fa6-4ce1-b5ff-f608970dc621">
 
-2. The ```handleRequest()``` method is called. The relevant argument in this screenshot is ```/add-message?s=Hi&user=carloslugo```.
-The relevant fields are the same, user and message. These fields are set to the previous user and message before the method was called again. When the method is called with this argument, the the user field value becomes ```"carloslugo"``` and the message value becomes ```"Bye"```. These values are changed due to the argument. These values are then stored in the lists as well and displayed as a chat message. 
 
+2. The ```handleRequest()``` method is called. The relevant argument in this screenshot is ```http://localhost:40066/add-message?s=Bye&user=carloslugo```.
+The relevant fields are the same, ```users``` and ```messages```. These fields should have a the previous messages and users stored. Then when the method is called again with the argument ```http://localhost:4004/add-message?s=Bye&user=carloslugo```, the relevant fields change again and "carloslugo" is added to the ```users``` field and "Bye" is added to the ```messages``` field.
 ## Part 2
 **```ls``` into absolute path of private key**
 
-<img width="495" alt="Screenshot 2024-01-30 at 7 01 55 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/efb5cb4a-0f1c-4a73-bfee-5c294ac291ac">
+<img width="483" alt="Screenshot 2024-02-12 at 1 51 38 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/15386f43-2b3a-4d09-97ae-550f911fd83f">
+
 
 **```ls``` into absolute path of public key**
 
-<img width="516" alt="Screenshot 2024-01-30 at 7 00 00 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/21cdc94c-c5ca-4914-bb5a-07c5679159c8">
+<img width="318" alt="Screenshot 2024-02-12 at 1 59 11 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/35e1e4c1-85de-421c-ad48-cfdf31a3d2c2">
+
 
 **Log into ieng6 account without password**
+<img width="876" alt="Screenshot 2024-02-12 at 2 00 47 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/9d62f01f-04e1-4a0e-b73e-fad3ab25434f">
 
-<img width="579" alt="Screenshot 2024-01-30 at 7 01 16 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/c084b721-510c-4a2c-adfe-9966c81b55a5">
 
 ## Part 3
 In the past two weeks, I have learned how to connect and run a server. In lab, I was able to learn how to remotely connect into my CSE 15L account and run a server. On this server, I was able to interact by changing the path and have different texts pop up. I also learned many commands that are useful.
