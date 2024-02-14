@@ -58,7 +58,7 @@ Previously, the program was reversing the newArray and then swapping those value
 
 ## Part 2
 
-## ```Grep``` command 
+## ```grep``` command 
 
 ### 1. ``-r`` allows grep to recursively search directories for patterns
 
