@@ -3,7 +3,9 @@
 ## Part 1
 
 ### Buggy program
-```reversed()```
+```
+reversed()
+```
 return the given array in reversed order
 
 ```
