@@ -1,9 +1,11 @@
 # Lab Report 3 Bugs and Commands 
 
 ## Part 1
+
 ### Buggy program
 ```reversed()```
 return the given array in reversed order
+
 ```
  static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -13,6 +15,7 @@ return the given array in reversed order
     return arr;
   }
 ```
+
 ### Failure inducing Input
 ``` { 1, 2 } ``` an array with a length > 0
 
@@ -52,6 +55,7 @@ return the given array in reversed order
     return newArray;
   }
 ```
+
 Previously, the program was reversing the newArray and then swapping those values into the input array. When the input array has a length greater than zero, it would reverse the newArray which would be filled with zeros and return an incorrect array. However, when the array is empty, it would just return an empty array and the bug would not be seen. To fix this, you would need to reverse the input array into the newArray by swapping their places in the loop and then returning the newArray as shown above.
 
 ## Part 2
