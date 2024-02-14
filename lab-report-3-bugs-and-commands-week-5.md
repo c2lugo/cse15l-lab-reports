@@ -3,12 +3,9 @@
 ## Part 1
 
 ### Buggy program
-```
-reversed()
-```
-return the given array in reversed order
+``reversed()`` return the given array in reversed order
 
-```
+````
 
  static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -18,7 +15,7 @@ return the given array in reversed order
     return arr;
   }
 
-```
+````
 
 ### Failure inducing Input
 ``` { 1, 2 } ``` an array with a length > 0
