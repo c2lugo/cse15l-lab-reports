@@ -73,8 +73,6 @@ Binary file /Users/carloslugo/Desktop//cse12-wi24-pa5-HashTable-starter-main/sta
 This command recursivley searches the directory `/Users/carloslugo/Desktop/` for the pattern `"cse"`. 
 This is useful when dealing with a large directory, it allows us to quickly find a pattern in a directory or even code you are working on.
 
-
-
 Example 2 (only include files with jar extension)
 ```
 carloslugo@Carloss-MacBook-Air ~ %  grep -r "cse" --include='*.jar' ./Downloads
@@ -95,6 +93,7 @@ carloslugo@Carloss-MacBook-Air ~ % grep -c "" ./Downloads/file.txt
 ```
 This command just counts the number of lines in `file.txt` since I did not specify a pattern. However, it can be 
 useful for finding the number of lines within your code that have a pattern.
+
 Example 2 (used with -r to search recursively)
 
 ```
@@ -125,8 +124,8 @@ carloslugo@Carloss-MacBook-Air ~ % grep -n "Hi" Downloads/file.txt
 ```
 This command searches for the lines that contain the pattern. This is useful when you
 directly want to see the lines within a file that match.
-Example 2 (used with -r)
 
+Example 2 (used with -r)
 ```
 carloslugo@Carloss-MacBook-Air ~ % grep -r -n  "Hello World" ./Downloads/school/wtr\ \'24/cse\ 12/misc.
 ./Downloads/school/wtr '24/cse 12/misc./week1Discussion-main/lecture1/messages/en-us.txt:1:Hello World!
@@ -147,8 +146,8 @@ Hello
 This command searches for lines within the text file, `file.txt`, that do no contain `"Hi"`.
 This can be useful when wanting to find just the error messages in your code or 
 the other way around.
-Example 2
 
+Example 2
 ```
 carloslugo@Carloss-MacBook-Air ~ %  grep -v "System.out.println" Documents/LearningJS/Main.java
 package LearningJS;
