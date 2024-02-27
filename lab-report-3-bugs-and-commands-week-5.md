@@ -64,24 +64,36 @@ Previously, the program was reversing the newArray and then swapping those value
 
 Example 1 (basic recursive search)
 ```
-carloslugo@Carloss-MacBook-Air ~ % grep -r "pattern" /Users/carloslugo/Desktop/
+carloslugo@Carloss-MacBook-Air ~ % grep -r "cse" /Users/carloslugo/Desktop/
 Binary file /Users/carloslugo/Desktop//cse12-wi24-pa4-Iterator-starter-main/starter/checkstyle-10.7.0-all.jar matches
 Binary file /Users/carloslugo/Desktop//cse12-wi24-pa3-LinkedList-starter-main/starter/checkstyle-10.7.0-all.jar matches
+Binary file /Users/carloslugo/Desktop//cse12-wi24-pa6-Stacks-and-Queues-starter-main/starter/checkstyle-10.7.0-all.jar matches
+Binary file /Users/carloslugo/Desktop//cse12-wi24-pa5-HashTable-starter-main/starter/checkstyle-10.7.0-all.jar matches
 ```
+This command recursivley searches the directory `/Users/carloslugo/Desktop/` for occurrences of the pattern "cse". 
+This is useful when dealing with large directory, it allows us to quickly find a pattern in code or file in directory.
+
+
 
 Example 2 (only include files with jar extension)
 ```
-carloslugo@Carloss-MacBook-Air ~ % grep -r "pattern" --include='*.jar' ./Downloads
+carloslugo@Carloss-MacBook-Air ~ %  grep -r "cse" --include='*.jar' ./Downloads
 Binary file ./Downloads/school/wtr '24/cse 12/programing assignments/cse12-wi24-pa1-RPS-starter-main/starter/checkstyle-10.7.0-all.jar matches
 Binary file ./Downloads/school/wtr '24/cse 12/programing assignments/cse12-wi24-pa2-ArrayList-starter-main/starter/checkstyle-10.7.0-all.jar matches
 Binary file ./Downloads/school/wtr '24/cse 12/misc./cse-12-pa-1-test/starter/checkstyle-10.7.0-all.jar matches
 ```
+This command recursively searches for the pattern "cse" in files with the `.jar`
+extension in the `./Downloads` directory. This is useful when you want to only search for patterns with a specic extension such as
+only `.java` files that could have important code to edit.
+
 ### 2. ``-c`` displays number of matched lines
 Example 1
 ```
 carloslugo@Carloss-MacBook-Air ~ % grep -c "" ./Downloads/file.txt 
 4
 ```
+This command just counts the number of lines in `file.txt`since I did not specify a pattern. However, it can be 
+useful for finding the number of lines within your code that have a pattern.
 Example 2 (used with -r to search recursively)
 ```
 carloslugo@Carloss-MacBook-Air ~ % grep -r -c "" Projects/IdeaProjects                         
