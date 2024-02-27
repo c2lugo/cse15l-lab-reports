@@ -27,7 +27,7 @@
 ```
 ### Failure inducing Output ~ Symptom
 
-<img width="680" alt="Screenshot 2024-02-13 at 7 12 02 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/63b5a45f-74b4-44d8-bcd8-8552e256f619">
+<img width="1128" alt="Screenshot 2024-02-26 at 7 14 59 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/64d21559-52ba-4091-9f6b-bf2adf5fa22b">
 
 ### Non-Failure inducing Input
 `` { } `` an array with a length of 0 ~ empty array
@@ -41,7 +41,7 @@
 ```
 ### Non-Failure inducing Output ~ Symptom
 
-<img width="184" alt="Screenshot 2024-02-13 at 7 15 57 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/aa3e9389-e805-4500-bc7e-667cd682567d">
+<img width="1134" alt="Screenshot 2024-02-26 at 7 16 10 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/cf722f23-59cc-4a6d-a5e7-93ecf59d8ce5">
 
 ### Fixed Program
 ```
