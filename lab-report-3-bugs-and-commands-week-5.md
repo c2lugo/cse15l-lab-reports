@@ -26,7 +26,6 @@
   }
 ```
 ### Failure inducing Output ~ Symptom
-
 <img width="1128" alt="Screenshot 2024-02-26 at 7 14 59 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/64d21559-52ba-4091-9f6b-bf2adf5fa22b">
 
 ### Non-Failure inducing Input
@@ -40,7 +39,6 @@
   }
 ```
 ### Non-Failure inducing Output ~ Symptom
-
 <img width="1134" alt="Screenshot 2024-02-26 at 7 16 10 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/cf722f23-59cc-4a6d-a5e7-93ecf59d8ce5">
 
 ### Fixed Program
