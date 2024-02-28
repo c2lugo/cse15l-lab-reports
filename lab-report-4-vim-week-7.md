@@ -4,7 +4,7 @@
 <img width="1710" alt="Screenshot 2024-02-27 at 5 43 15 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/4af2eb49-7b26-47fc-9967-8585b8edb601">
 
 Keys pressed: `s, s, h, <Space>, c, 2, l, u, g, o, <Command-V>` Log into my ieng6 using ssh.
-`<Enter> <Command-V>` 
+`<Enter> <Command-V>` Work in cs15l.
 
 ### Cloning my fork of the repository from my Github account (using the SSH URL)
 <img width="1710" alt="Screenshot 2024-02-27 at 5 27 37 PM" src="https://github.com/c2lugo/cse15l-lab-reports/assets/156368539/8c4758e3-72c5-4d7f-ac5a-15ed64bd6a96">
