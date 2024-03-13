@@ -43,7 +43,7 @@ This change ensures that the script correctly identifies a compilation error whe
 By making this adjustment, the script will now function as intended, printing "Compilation Error" and exiting if there is an issue during compilation, and continuing with the grading process if compilation is successful.
 
 #### File Directory: 
-```
+```java
 List-Examples-Grader/
   |-  .vscode 
   |-  grading-area
@@ -78,7 +78,7 @@ List-Examples-Grader/
   ```
 
 ### **```grade.sh```**
-```
+```bash
 CPATH='.:../lib/hamcrest-core-1.3.jar:../lib/junit-4.13.2.jar'
 
 rm -rf student-submission
@@ -138,7 +138,7 @@ echo "Finished grading."
 # tests
 ```
 ### **```TestListExamples.java```**
-```
+```java
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -210,8 +210,7 @@ public class TestListExamples {
 
 ```
 ### **```ListExamples.java```**
-
-```
+```java
 import java.util.ArrayList;
 import java.util.List;
 
